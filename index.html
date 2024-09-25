@@ -50,15 +50,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
             margin-bottom: 30px;
         }
 
         nav a {
             color: #ff87b5;
             text-decoration: none;
-            font-size: 1.5em;
-            padding: 15px 30px;
+            font-size: 1.2em;
+            padding: 12px 24px;
             border: 3px solid #ff87b5;
             border-radius: 50px;
             transition: background-color 0.3s, color 0.3s;
@@ -89,10 +90,8 @@
             transition: background-color 0.3s ease;
         }
 
-        .download-section a img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
+        .download-section a i {
+            font-size: 1.5em;
         }
 
         .download-section a:hover {
@@ -106,6 +105,88 @@
             background-color: #ff87b5;
             color: white;
         }
+
+        /* Media Queries */
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            nav a {
+                font-size: 1.1em;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+
+            .download-section a {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+
+            .download-section a {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 576px) {
+            header {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.6em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 0.8em;
+                padding: 6px 12px;
+            }
+
+            .download-section a {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+
+            footer {
+                padding: 15px;
+                font-size: 0.8em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,22 +198,18 @@
         </header>
 
         <nav>
+            <a target="_blank" href="http://57.155.66.48:3000">Officer Admin Panel</a>
             <a target="_blank" href="privacy/th.html">Privacy Policy (TH)</a>
             <a target="_blank" href="privacy/th.html">Privacy Policy (EN)</a>
-            <a target="_blank" href="http://57.155.66.48:3000">Officer Admin Panel</a>
         </nav>
 
         <div class="download-section">
             <h2>Download the Cleanvibe App</h2>
             <a href="https://play.google.com/store/apps/details?id=cleanvibe" target="_blank">
-                <i class="fa-brands fa-google-play"></i>
-                &nbsp;
-                Get it on Android
+                <i class="fa-brands fa-google-play"></i>&nbsp; Get it on Android
             </a>
             <a href="https://apps.apple.com/us/app/cleanvibe/id000000" target="_blank">
-                <i class="fa-brands fa-app-store-ios"></i>
-                &nbsp;
-                Download on the App Store
+                <i class="fa-brands fa-app-store-ios"></i>&nbsp; Download on the App Store
             </a>
         </div>
 
