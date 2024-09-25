@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cleanvibe | Home</title>
+    <script src="https://kit.fontawesome.com/544f5cf67f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #FFD6EB;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        header {
+            width: 100%;
+            background-color: #ff87b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #ff87b5;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 15px 30px;
+            border: 3px solid #ff87b5;
+            border-radius: 50px;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ff87b5;
+            color: white;
+        }
+
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .download-section a {
+            display: inline-flex;
+            align-items: center;
+            background-color: #ff87b5;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-section a img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .download-section a:hover {
+            background-color: #e06b97;
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #ff87b5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to Cleanvibe</h1>
+            <p>Your trusted source for cleanliness and sustainability</p>
+        </header>
+
+        <nav>
+            <a target="_blank" href="privacy/th.html">Privacy Policy (TH)</a>
+            <a target="_blank" href="privacy/th.html">Privacy Policy (EN)</a>
+            <a target="_blank" href="http://57.155.66.48:3000">Officer Admin Panel</a>
+        </nav>
+
+        <div class="download-section">
+            <h2>Download the Cleanvibe App</h2>
+            <a href="https://play.google.com/store/apps/details?id=cleanvibe" target="_blank">
+                <i class="fa-brands fa-google-play"></i>
+                &nbsp;
+                Get it on Android
+            </a>
+            <a href="https://apps.apple.com/us/app/cleanvibe/id000000" target="_blank">
+                <i class="fa-brands fa-app-store-ios"></i>
+                &nbsp;
+                Download on the App Store
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Cleanvibe. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
